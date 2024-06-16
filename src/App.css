@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root {
+    height: 100%;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    height: 100%;
+    width: 15%;
+    margin-left: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar ul {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar li {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    width: fit-content;
+    margin: 10px 0;
+    cursor: pointer;
+    transform-origin: 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .banner {
+    padding: 3px;
+
+    background-color: #272727;
+    color: #FFFFFF;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.navbar .banner.bottom {
+    margin-top: auto;
+}
+
+.box {
+    width: calc(33.333% - 20px); /* 3 items per row with gap */
+    padding-top: 33.333%; /* Creates a square aspect ratio */
+    box-sizing: border-box;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+.box .title {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
+
+.box .subheading {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: gray;
+}
+
+.box:hover {
+    background-image: url('https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-background_23-2150914017.jpg?t=st=1718297793~exp=1718301393~hmac=ade54eb60a8a50349544a76bdb6b64607dbf7228a77f322849c51aaa08ce66c3&w=1060');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Optional: change text color for better visibility */
 }

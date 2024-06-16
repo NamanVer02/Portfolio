@@ -1,0 +1,62 @@
+.landing {
+    display: flex;
+    height: 100%;
+    gap: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 200px;
+    margin-top: 60px;
+}
+
+.about {
+    display: flex;
+    gap: 30px;
+}
+
+.about .logo {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    flex-shrink: 0;
+}
+
+.about .info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 15px;
+
+    width: auto;
+}
+
+.about h2 {
+    margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.about h3 {
+    margin-top: auto;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.dotted-line {
+    width: 100%;
+    opacity: 0.3;
+    border-bottom: 2px dotted #000; /* Creates the dotted line */
+    margin: 20px 0; /* Adjust this value to control spacing around the line */
+}
+
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
