@@ -1,4 +1,4 @@
-.contact {
+.exp {
     display: flex;
     height: 100%;
     width: 100%;
@@ -12,13 +12,4 @@
     width: 100%;
     margin-right: 200px;
     margin-top: 60px;
-}
-
-.contact-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-
-    margin-top: 10px;
 }

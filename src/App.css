@@ -44,6 +44,8 @@ html, body, #root {
 
     font-size: 1.3rem;
     font-weight: 300;
+
+    cursor: pointer;
 }
 
 .navbar .banner.bottom {
@@ -52,7 +54,7 @@ html, body, #root {
 
 .box {
     width: calc(33.333% - 20px); /* 3 items per row with gap */
-    padding-top: 33.333%; /* Creates a square aspect ratio */
+    aspect-ratio: 1/1;
     box-sizing: border-box;
     border: 2px solid black;
     text-align: center;
@@ -60,14 +62,14 @@ html, body, #root {
 }
 
 .box .title {
-    margin: 0;
-    font-size: 24px;
+    margin-top: 50%;
+    font-size: 1.5rem;
     color: black;
 }
 
 .box .subheading {
-    margin: 10px 0 0;
-    font-size: 18px;
+    font-size: 1rem;
+    font-weight: 400;
     color: gray;
 }
 
@@ -76,4 +78,19 @@ html, body, #root {
     background-size: cover;
     background-position: center;
     color: white; /* Optional: change text color for better visibility */
+}
+
+.rect-box {
+    width: 100%;
+    height: 15rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+.rect-box .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

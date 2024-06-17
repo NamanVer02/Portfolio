@@ -1,10 +1,16 @@
 import React from 'react'
 
-function ContentBox() {
+function ContentBox({ height, width, aspectRatio, title, subHeading }) {
+  const style = {
+    height: height,
+    width: width,
+    aspectRatio: aspectRatio,
+  }
+
   return (
-    <div class="box">
-        <h1 class="title">Title</h1>
-        <h2 class="subheading">Subheading</h2>
+    <div class="box" style={style}>
+        <h1 class="title">{title || "Title"}</h1>
+        <h2 class="subheading">{subHeading || "Subheading"}</h2>
     </div>
   )
 }

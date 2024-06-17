@@ -8,12 +8,11 @@ function Navbar() {
   let location = useLocation();
 
   const navItems = [
-    { name: 'About Me', path: '/about-me' },
+    { name: 'About Me', path: '/' },
     { name: 'Skills', path: '/skills' },
     { name: 'Projects', path: '/projects' },
     { name: 'Experience', path: '/experience' },
     { name: 'Resume', path: '/resume' },
-    { name: 'Contact Me', path: '/contact-me' }
   ];
   
   return (
@@ -46,6 +45,8 @@ function Navbar() {
           <motion.div className='banner bottom'
             whileHover={{backgroundColor: '#FF5454'}}
             transition={{type: 'spring'}}
+            onClick={() => navigate("/contact-me")}
+            style={{backgroundColor: location.pathname === "/contact-me" ? '#FF5454' : '#272727'}}
           >Contact Me</motion.div>
       </div>
     </>
