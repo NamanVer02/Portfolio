@@ -7,10 +7,13 @@ function RectangleBox({ title, subHeading, org, date }) {
             <h3 className="org">{org || "Organisation"}</h3>
             <h1 className="title">{title || "Title"}</h1>
             <h2 className="subheading">{subHeading || "Subheading"}</h2>
+            <div className="tools">
+                
+            </div>
             <h3 className='date'>{date || "Date"}</h3>
         </div>
         <div className="logo">
-            
+
         </div>
     </div>
   )
