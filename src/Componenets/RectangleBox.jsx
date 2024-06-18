@@ -1,12 +1,11 @@
 import React from 'react'
 
-function RectangleBox({ title, subHeading, org, date }) {
+function RectangleBox({ title, org, date }) {
   return (
     <div class="rect-box">
         <div className="info">
             <h3 className="org">{org || "Organisation"}</h3>
             <h1 className="title">{title || "Title"}</h1>
-            <h2 className="subheading">{subHeading || "Subheading"}</h2>
             <div className="tools">
                 
             </div>

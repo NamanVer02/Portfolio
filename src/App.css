@@ -73,13 +73,6 @@ html, body, #root {
     color: gray;
 }
 
-.box:hover {
-    background-image: url('https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-background_23-2150914017.jpg?t=st=1718297793~exp=1718301393~hmac=ade54eb60a8a50349544a76bdb6b64607dbf7228a77f322849c51aaa08ce66c3&w=1060');
-    background-size: cover;
-    background-position: center;
-    color: white; /* Optional: change text color for better visibility */
-}
-
 .rect-box {
     display: flex;
     flex-direction: row;
@@ -102,14 +95,19 @@ html, body, #root {
     justify-content: space-between;
 
     height: 100%;
+    width: 60%;
+
+    text-align: left;
 }
 
 .rect-box .org {
     margin-top: 0;
+    font-weight: 500;
 }
 
 .rect-box .date {
     margin-top  : auto;
+    font-weight: 500;
 }
 
 .rect-box .logo {

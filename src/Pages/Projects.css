@@ -1,4 +1,4 @@
-.exp {
+.projects {
     display: flex;
     height: 100%;
     width: 100%;
@@ -15,7 +15,7 @@
     margin-bottom: 60px;
 }
 
-.exp-list{
+.project-list{
     display: flex;
     flex-direction: column;
     gap: 20px;
