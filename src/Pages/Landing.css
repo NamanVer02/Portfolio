@@ -20,8 +20,13 @@
 .about .logo {
     height: 200px;
     width: 200px;
-    background-color: aqua;
     flex-shrink: 0;
+}
+
+.about .logo img{
+    height: 200px;
+    width: 200px;
+    opacity: 0.8;
 }
 
 .about .info {
