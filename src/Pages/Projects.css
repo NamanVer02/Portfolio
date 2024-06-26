@@ -19,6 +19,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    padding: 25px;
     
     overflow-y: scroll;
     scrollbar-width: none;

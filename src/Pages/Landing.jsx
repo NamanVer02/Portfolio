@@ -7,9 +7,9 @@ import './Landing.css'
 function Landing() {
   const recentList = [
     {
-      title: 'Event Management Platform',
-      content: 'AWS Serverless',
-      link: ' ',
+      title: 'ReWriteAI',
+      content: 'A LLM service to re-write your messages into formal lingua',
+      link: 'https://rewriteai.streamlit.app/',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
     },
     {

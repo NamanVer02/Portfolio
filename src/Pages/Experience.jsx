@@ -41,19 +41,17 @@ function Experience() {
         <Navbar></Navbar>
         <div className="content">
             <h1>Experience</h1>
-            <div className="sample">
-              <div className="exp-list">
-                {expList.map((item, index) => (
-                  <RectangleBox 
-                    key={index}
-                    org={item.org}
-                    title={item.title}
-                    date={item.date}
-                    backgroundURL={item.background}
-                    link={item.link}
-                  ></RectangleBox>
-                ))}
-              </div>
+            <div className="exp-list">
+              {expList.map((item, index) => (
+                <RectangleBox 
+                  key={index}
+                  org={item.org}
+                  title={item.title}
+                  date={item.date}
+                  backgroundURL={item.background}
+                  link={item.link}
+                ></RectangleBox>
+              ))}
             </div>
         </div>
     </div>
