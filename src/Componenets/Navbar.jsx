@@ -21,7 +21,7 @@ function Navbar() {
           <motion.div className='banner top'
             whileHover={{backgroundColor: '#FF5454'}}
             transition={{type: 'spring'}}
-          >Settings</motion.div>
+          ></motion.div>
 
           <img src={Image}></img>
 

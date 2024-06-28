@@ -52,6 +52,10 @@ html, body, #root {
     margin-top: auto;
 }
 
+.navbar .banner.top {
+    height: 3rem;
+}
+
 .box {
     width: calc(33.333% - 20px); /* 3 items per row with gap */
     aspect-ratio: 1/1;

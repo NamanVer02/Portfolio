@@ -1,14 +1,15 @@
 import React from 'react'
 import { color, motion, spring } from 'framer-motion'
 
-function ContentBox({ height, width, aspectRatio, title, subHeading, backgroundURL, link }) {
+function ContentBox({ height, width, aspectRatio, title, subHeading, backgroundURL, link, fontsize }) {
   const style = {
     height: height,
     width: width,
     aspectRatio: aspectRatio,
     color: 'black',
     backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) )`,
-    cursor: link != ' ' ? 'pointer' : 'default'
+    cursor: link != ' ' ? 'pointer' : 'default',
+    fontSize: fontsize
   }
 
   const hoverStyle = {
@@ -17,7 +18,8 @@ function ContentBox({ height, width, aspectRatio, title, subHeading, backgroundU
     backgroundSize: 'cover', // Ensure the image covers the entire box
     backgroundPosition: 'center', // Center the image
     border: 'none', // Remove border on hover
-    color: 'white' // Change text color to white
+    color: 'white',
+    fontSize: fontsize
   }
 
   const handleClick = () => {

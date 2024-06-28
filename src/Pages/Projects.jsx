@@ -14,6 +14,13 @@ function Projects() {
     }, 
     {
       org: 'Personal',
+      title: 'PDF Partner',
+      date: 'June 2024',
+      link: 'https://pdf-partner.streamlit.app/',
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+    }, 
+    {
+      org: 'Personal',
       title: 'Event Management Platform',
       date: 'November 2023',
       link: ' ',
