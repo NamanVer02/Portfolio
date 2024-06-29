@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function RectangleBox({ title, org, date, link, backgroundURL }) {
+function RectangleBox({ title, org, date, link, backgroundURL, imagePath }) {
   const style = {
     color: 'black',
     backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) )`,
@@ -21,6 +21,7 @@ function RectangleBox({ title, org, date, link, backgroundURL }) {
     if(link != ' '){
       window.open(link, '_blank');
     }
+    console.log(imagePath);
   }
 
   return (
@@ -29,6 +30,7 @@ function RectangleBox({ title, org, date, link, backgroundURL }) {
       style={style}
       whileHover={hoverStyle}
       transition={{type: 'spring', border: {duration: 0}, backgroundImage: {duration: 0}}}
+      onClick={handleClick}
     >
         <div className="info">
             <h3 className="org">{org || "Organisation"}</h3>
@@ -39,7 +41,7 @@ function RectangleBox({ title, org, date, link, backgroundURL }) {
             <h3 className='date'>{date || "Date"}</h3>
         </div>
         <div className="logo">
-
+          <img src={process.env.PUBLIC_URL + `${imagePath}`} alt="logo" className="logo-img" />
         </div>
     </motion.div>
   )

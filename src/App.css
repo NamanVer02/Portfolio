@@ -112,9 +112,11 @@ html, body, #root {
     font-weight: 500;
 }
 
-.rect-box .logo {
+.rect-box .logo img{
     height: 200px;
     width: 200px;
-    background-color: aqua;
+
+    object-fit: contain;
+
     flex-shrink: 0;
 }

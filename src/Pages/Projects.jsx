@@ -40,6 +40,13 @@ function Projects() {
       link: ' ',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
     }, 
+    {
+      org: 'Smart India Hackathon',
+      title: 'Parkwise UI',
+      date: 'September 2023',
+      link: 'https://www.figma.com/proto/2Lwyn0CebWPfzhfUCXAJIE/Untitled?page-id=0%3A1&node-id=120-194&viewport=367%2C299%2C0.2&t=HeZdMsuqx2JTIeGM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=120%3A194',
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+    }, 
   ];
 
   return (

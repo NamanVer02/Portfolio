@@ -10,28 +10,32 @@ function Experience() {
       title: 'Graphic and UI/UX Designer',
       date: 'October 2022 - Present',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/GDSC.png'
     },
     {
       org: 'Karking.in',
       title: 'Flutter Developer',
       date: 'September 2023 - January 2024',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/Karking.png'
     },
     {
       org: 'Jivan Health',
       title: 'User Interface and Experience Designer',
       date: 'January 2024 - April 2024',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/Jivan.svg'
     },
     {
       org: 'Freelancer.com',
       title: 'Design Freelancer',
       date: 'August 2017 - June 2019',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/Freelancer.svg'
     },
     
   ];
@@ -50,6 +54,7 @@ function Experience() {
                   date={item.date}
                   backgroundURL={item.background}
                   link={item.link}
+                  imagePath={item.imagePath}
                 ></RectangleBox>
               ))}
             </div>
