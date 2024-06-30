@@ -10,42 +10,48 @@ function Projects() {
       title: 'ReWriteAI',
       date: 'June 2024',
       link: 'https://rewriteai.streamlit.app/',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/ReWriteAI.png'
     }, 
     {
       org: 'Personal',
       title: 'PDF Partner',
       date: 'June 2024',
       link: 'https://pdf-partner.streamlit.app/',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/PDF_Partner.png'
     }, 
     {
-      org: 'Personal',
+      org: 'Ethnus - AWS',
       title: 'Event Management Platform',
       date: 'November 2023',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/Ethnus.png'
     }, 
     {
       org: 'Personal',
       title: 'Birthday Reminder',
       date: 'September 2023',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/BirthdayReminder.png'
     }, 
     {
       org: 'Personal',
       title: 'Daily Bonus Collector',
       date: 'October 2021',
       link: ' ',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/DailyBonus.png'
     }, 
     {
       org: 'Smart India Hackathon',
       title: 'Parkwise UI',
       date: 'September 2023',
       link: 'https://www.figma.com/proto/2Lwyn0CebWPfzhfUCXAJIE/Untitled?page-id=0%3A1&node-id=120-194&viewport=367%2C299%2C0.2&t=HeZdMsuqx2JTIeGM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=120%3A194',
-      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
+      imagePath: '/Assets/Parkwise.png'
     }, 
   ];
 
@@ -63,6 +69,7 @@ function Projects() {
                   date={item.date}
                   backgroundURL={item.background}
                   link={item.link}
+                  imagePath={item.imagePath}
                 ></RectangleBox>
               ))}
             </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../Componenets/Navbar'
 import ContentBox from '../Componenets/ContentBox'
-import image from '../Assets/Logo.png'
 import './Landing.css'
 
 function Landing() {
@@ -37,7 +36,7 @@ function Landing() {
               <h3>Currently I am very interested in the prospects of Generative AI and how it can revolutionize the world we know as of today.</h3>
             </div>
             <div className="logo">
-              <img src={image}></img>
+              <img src={process.env.PUBLIC_URL + '/Assets/Logo.png'}></img>
             </div>
           </div>
 

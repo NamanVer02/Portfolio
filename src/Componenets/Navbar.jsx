@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from '../Assets/dp.jpg'
 import { motion } from 'framer-motion'
 import { useLocation, useNavigate } from 'react-router-dom'
 
@@ -23,7 +22,7 @@ function Navbar() {
             transition={{type: 'spring'}}
           ></motion.div>
 
-          <img src={Image}></img>
+          <img src={process.env.PUBLIC_URL + '/Assets/dp.jpg'}></img>
 
           <div className='nav'>
             <h1>Navigation</h1>
