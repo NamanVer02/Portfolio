@@ -76,7 +76,7 @@ function Navbar() {
                 variants={listItemVariants}
                 initial="hidden"
                 animate={controls}
-                whileHover={{ color: '#FF5454', scale: 1.1 }}
+                whileHover={{ color: '#FF5454', scale: 1.1, fontWeight: 600 }}
                 transition={{ type: 'spring', stiffness: 300 }}
                 onClick={() => navigate(item.path)}
                 style={{ color: location.pathname === item.path ? '#FF5454' : 'inherit' }}
