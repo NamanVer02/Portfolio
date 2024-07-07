@@ -1,6 +1,6 @@
 import React from 'react'
-import ContentBox from '../Componenets/ContentBox'
-import Navbar from '../Componenets/Navbar'
+import ContentBox from '../Components/ContentBox'
+import Navbar from '../Components/Navbar'
 import './Contact.css'
 
 function Contact() {

@@ -1,6 +1,6 @@
 import React from 'react'
-import RectangleBox from '../Componenets/RectangleBox'
-import Navbar from '../Componenets/Navbar'
+import RectangleBox from '../Components/RectangleBox'
+import Navbar from '../Components/Navbar'
 import './Experience.css'
 
 function Experience() {

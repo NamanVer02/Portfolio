@@ -1,7 +1,8 @@
 import React from 'react'
-import Navbar from '../Componenets/Navbar'
-import ContentBox from '../Componenets/ContentBox'
+import Navbar from '../Components/Navbar'
+import ContentBox from '../Components/ContentBox'
 import './Landing.css'
+import { motion } from 'framer-motion'
 
 function Landing() {
   const recentList = [

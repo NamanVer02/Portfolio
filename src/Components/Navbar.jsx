@@ -76,10 +76,11 @@ function Navbar() {
                 variants={listItemVariants}
                 initial="hidden"
                 animate={controls}
-                whileHover={{ color: '#FF5454', scale: 1.1, fontWeight: 600 }}
+                whileHover={{ color: '#FF5454', scale: 1.1, fontWeight: 700 }}
                 transition={{ type: 'spring', stiffness: 300 }}
                 onClick={() => navigate(item.path)}
-                style={{ color: location.pathname === item.path ? '#FF5454' : 'inherit' }}
+                style={{ color: location.pathname === item.path ? '#FF5454' : 'inherit', fontWeight: location.pathname === item.path  ? 700 : 500 }}
+
               >
                 {item.name}
               </motion.li>
@@ -92,7 +93,7 @@ function Navbar() {
           whileHover={{ backgroundColor: '#FF5454' }}
           transition={{ type: 'spring' }}
           onClick={() => navigate("/contact-me")}
-          style={{ backgroundColor: location.pathname === "/contact-me" ? '#FF5454' : '#272727' }}
+          style={{ backgroundColor: location.pathname === "/contact-me" ? '#FF5454' : '#272727'}}
         >
           Contact Me
         </motion.div>
