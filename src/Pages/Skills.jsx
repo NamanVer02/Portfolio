@@ -163,9 +163,14 @@ const Skills = () => {
             background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
             category: "Frontend",
             link: " "
-        }
+        },
+        {
+            name: "Docker",
+            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            category: "Development",
+            link: " "
+        },
     ];
-        
 
     const [searchTerm, setSearchTerm] = useState("");
     const [isFocused, setIsFocused] = useState(false);
