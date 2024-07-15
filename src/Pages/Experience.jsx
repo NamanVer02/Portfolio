@@ -15,7 +15,7 @@ function Experience() {
     },
     {
       org: 'Karking.in',
-      title: 'Flutter Developer',
+      title: 'Android Developer Intern',
       date: 'September 2023 - January 2024',
       link: ' ',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
