@@ -35,6 +35,12 @@ function Contact() {
       link: 'https://www.behance.net/namanverma10',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
     },
+    {
+      title: 'Leetcode',
+      content: 'Naman Verma',
+      link: 'https://leetcode.com/u/NamanVer02/',
+      background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
+    },
   ];
 
   return (

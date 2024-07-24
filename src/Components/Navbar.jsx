@@ -33,6 +33,7 @@ function Navbar() {
     { name: 'Skills', path: '/skills' },
     { name: 'Projects', path: '/projects' },
     { name: 'Experience', path: '/experience' },
+    { name: 'Certifications', path: '/certifications' },
     { name: 'Resume', path: '/resume' },
   ];
 
