@@ -35,7 +35,7 @@ function Certifications() {
         <div className='cert'>
             <Navbar></Navbar>
             <div className="content">
-                <h1>Experience</h1>
+                <h1>Certifications</h1>
                 <div className="cert-list">
                   {certList.map((item, index) => (
                     <RectangleBox 
