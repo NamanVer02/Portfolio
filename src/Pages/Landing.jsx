@@ -8,19 +8,19 @@ function Landing() {
   const recentList = [
     {
       title: 'PDF Partner',
-      content: 'Add a question answer feature to all your PDF Documents',
+      content: 'Webserivce to add a question answer feature to all your PDF Documents',
       link: 'https://pdf-partner.streamlit.app/',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
     },
     {
       title: 'ReWriteAI',
-      content: 'A LLM service to re-write your messages into formal lingua',
+      content: 'A LLM service to re-write your messages in formal lingua',
       link: 'https://rewriteai.streamlit.app/',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
     },
     {
       title: 'CoherentDC',
-      content: 'Simple Landing Page',
+      content: 'Conceptual Landing Page for a architecture comapny',
       link: 'https://namanver02.github.io/CoherentDC/',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg'
     },
