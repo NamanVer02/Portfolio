@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -6,6 +6,11 @@ function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const controls = useAnimation();
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   useEffect(() => {
     const hasVisited = localStorage.getItem('hasVisited');
@@ -51,6 +56,12 @@ function Navbar() {
     })
   };
 
+  const mobileMenuVariants = {
+    hidden: { opacity: 0, x: '-100%' },
+    visible: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 50 } },
+    exit: { opacity: 0, x: '-100%', transition: { type: 'spring', stiffness: 50 } }
+  };
+
   return (
     <>
       <motion.div
@@ -80,8 +91,7 @@ function Navbar() {
                 whileHover={{ color: '#FF5454', scale: 1.1, fontWeight: 700 }}
                 transition={{ type: 'spring', stiffness: 300 }}
                 onClick={() => navigate(item.path)}
-                style={{ color: location.pathname === item.path ? '#FF5454' : 'inherit', fontWeight: location.pathname === item.path  ? 700 : 500 }}
-
+                style={{ color: location.pathname === item.path ? '#FF5454' : 'inherit', fontWeight: location.pathname === item.path ? 700 : 500 }}
               >
                 {item.name}
               </motion.li>
@@ -94,10 +104,47 @@ function Navbar() {
           whileHover={{ backgroundColor: '#FF5454' }}
           transition={{ type: 'spring' }}
           onClick={() => navigate("/contact-me")}
-          style={{ backgroundColor: location.pathname === "/contact-me" ? '#FF5454' : '#272727'}}
+          style={{ backgroundColor: location.pathname === "/contact-me" ? '#FF5454' : '#272727' }}
         >
           Contact Me
         </motion.div>
+      </motion.div>
+
+      {/* Hamburger Menu */}
+      <div className='hamburger' onClick={toggleMobileMenu}>
+        <span className='bar'></span>
+        <span className='bar'></span>
+        <span className='bar'></span>
+      </div>
+
+      <motion.div
+        className='mobile-nav'
+        variants={mobileMenuVariants}
+        initial="hidden"
+        animate={isMobileMenuOpen ? 'visible' : 'exit'}
+      >
+        <img src={process.env.PUBLIC_URL + '/Assets/dp.jpg'} alt='Profile' />
+
+        <ul>
+          {navItems.map((item, index) => (
+            <motion.li
+              key={index}
+              custom={index}
+              variants={listItemVariants}
+              initial="hidden"
+              animate={isMobileMenuOpen ? 'visible' : 'exit'}
+              onClick={() => {
+                navigate(item.path);
+                toggleMobileMenu(); // Close the menu after selection
+              }}
+              whileHover={{ color: '#FF5454', scale: 1.1, fontWeight: 700 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+              style={{ color: location.pathname === item.path ? '#FF5454' : 'inherit', fontWeight: location.pathname === item.path ? 700 : 500 }}
+            >
+              {item.name}
+            </motion.li>
+          ))}
+        </ul>
       </motion.div>
     </>
   );

@@ -8,7 +8,7 @@ function Experience() {
     {
       org: 'Google Student Developers Club',
       title: 'Graphic and UI/UX Designer',
-      date: 'October 2022 - Present',
+      date: 'October 2022 - August 2024',
       link: ' ',
       background: 'https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg',
       imagePath: '/Assets/GDSC.png'

@@ -2,13 +2,14 @@ import React from 'react';
 import { Box, Tabs, Tab } from '@mui/material';
 
 const categories = [
-    "Languages",
+    "Programming Languages",
     "Software",
     "Concepts",
     "Design",
     "Development",
     "Backend",
-    "Frontend"
+    "Frontend",
+    "Framework"
 ];
 
 const FilterTabs = ({ selectedSkills, handleToggleSkill }) => {

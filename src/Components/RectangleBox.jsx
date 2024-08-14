@@ -40,8 +40,8 @@ function RectangleBox({ title, org, date, link, backgroundURL, imagePath }) {
             </div>
             <h3 className='date'>{date || "Date"}</h3>
         </div>
-        <div className="logo">
-          <img src={process.env.PUBLIC_URL + `${imagePath}`} alt="logo" className="logo-img" />
+        <div className="side-img">
+          <img src={process.env.PUBLIC_URL + `${imagePath}`} />
         </div>
     </motion.div>
   )

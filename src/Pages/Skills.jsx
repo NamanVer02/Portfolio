@@ -7,166 +7,185 @@ import 'boxicons';
 import FilterTabs from "../Components/FilterTabs";
 
 const Skills = () => {
+    const backGroundLink = "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg"
     const skillsList = [
         {
             name: "C++",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "Python",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "Javascript",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "C",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "Java",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "Dart",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "SQL",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Languages",
+            background: backGroundLink,
+            category: "Programming Languages",
             link: " "
         },
         {
             name: "Firebase",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Backend",
             link: " "
         },
         {
             name: "AWS",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Backend",
             link: " "
         },
         {
             name: "Google Cloud",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Backend",
             link: " "
         },
         {
             name: "REST API",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Backend",
             link: " "
         },
         {
             name: "Tensorflow",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Concepts",
+            background: backGroundLink,
+            category: "Framework",
             link: " "
         },
         {
             name: "Pytorch",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
-            category: "Concepts",
+            background: backGroundLink,
+            category: "Framework",
             link: " "
         },
         {
             name: "Flutter",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Frontend",
             link: " "
         },
         {
             name: "Figma",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Design",
             link: " "
         },
         {
             name: "React",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Frontend",
             link: " "
         },
         {
             name: "Flask",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Backend",
             link: " "
         },
         {
             name: "Git",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Development",
             link: " "
         },
         {
             name: "VS Code",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Software",
             link: " "
         },
         {
             name: "GitHub",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Development",
             link: " "
         },
         {
             name: "Adobe Creative Suite",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Design",
             link: " "
         },
         {
             name: "MS Office",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Software",
             link: " "
         },
         {
             name: "Linux",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Software",
             link: " "
         },
         {
             name: "Generative AI",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Concepts",
             link: " "
         },
         {
             name: "LangChain",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
+            category: "Framework",
+            link: " "
+        },
+        {
+            name: "CI/CD",
+            background: backGroundLink,
+            category: "Concepts",
+            link: " "
+        },
+        {
+            name: "DBMS",
+            background: backGroundLink,
+            category: "Concepts",
+            link: " "
+        },
+        {
+            name: "Operating Systems",
+            background: backGroundLink,
             category: "Concepts",
             link: " "
         },
         {
             name: "Streamlit",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Frontend",
             link: " "
         },
         {
             name: "Docker",
-            background: "https://st5.depositphotos.com/73964430/64907/i/450/depositphotos_649078456-stock-illustration-water-color-oil-painting-fine.jpg",
+            background: backGroundLink,
             category: "Development",
             link: " "
         },
