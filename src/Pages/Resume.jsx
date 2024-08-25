@@ -8,7 +8,7 @@ function Resume() {
         <Navbar></Navbar>
         <div className="content">
             <h1>Resume</h1>
-            <iframe src="https://drive.google.com/file/d/1b-rAA02ydUFbyUC4MthopAZHNig6Amvl/preview" width="auto" height="100%" allow="autoplay" title='resume'></iframe>
+            <iframe src="https://drive.google.com/file/d/1OITxprhS375U_180AT2XX--S5hk8gyKG/preview" width="auto" height="100%" allow="autoplay" title='resume'></iframe>
         </div>
     </div>
   )
